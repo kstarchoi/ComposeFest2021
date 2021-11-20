@@ -34,6 +34,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- rally://accounts/{name} -->
+                <data
+                    android:host="accounts"
+                    android:scheme="rally" />
+            </intent-filter>
         </activity>
     </application>
 </manifest>
